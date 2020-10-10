@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          skip-ssl-validation: true
+          uri: https://github.com/serpentcross/spring-server-config.git
+          force-pull: true
